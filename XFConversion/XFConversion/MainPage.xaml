@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFConversion"
+             x:Class="XFConversion.MainPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Button x:Name="ButtonAuthenticate"
+                    Text="Login"
+                    Command="{Binding LoginCommand}"></Button>
+            <Button x:Name="ButtonLogout"
+                    Text="LogOut"
+                    Command="{Binding LogoutCommand}"></Button>
+            <Button x:Name="ButtonQueryAPI"
+                    Text="Query API"
+                    Command="{Binding QueryAPICommand}"></Button>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Is Connected:"></Label>
+                <Label Text="{Binding IsConnected}"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="First Name:"></Label>
+                <Label Text="{Binding FirstName}"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Last Name:"></Label>
+                <Label Text="{Binding LastName}"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email:"></Label>
+                <Label Text="{Binding Email}"></Label>
+            </StackLayout>
+            <Label Margin="0,10" TextColor="Red" Text="{Binding ErrorMessage}" IsVisible="{Binding ShowErrorMessage}"></Label>
+        </StackLayout>
+        
+    </ContentPage.Content>
+
+</ContentPage>

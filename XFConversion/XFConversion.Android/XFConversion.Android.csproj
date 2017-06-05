@@ -102,7 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autehticator.cs" />
+    <Compile Include="Authenticator.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

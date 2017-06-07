@@ -13,7 +13,7 @@ namespace XFConversion
         {
             InitializeComponent();
 
-            MainPage = new XFConversion.MainPage();
+            MainPage = new XFConversion.LoginPage();
 
             //test change 
         }

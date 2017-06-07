@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace XFConversion.ViewModels
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class LoginPageModel : INotifyPropertyChanged
     {
         #region Fields
 
@@ -96,7 +96,7 @@ namespace XFConversion.ViewModels
         public ICommand LoginCommand { get; private set; }
         public ICommand LogoutCommand { get; private set; }
         public ICommand QueryAPICommand { get; private set; }
-        public MainViewModel()
+        public LoginPageModel()
         {
             LoginCommand = new Command(async () => await LoginAsync());
             LogoutCommand = new Command(LogoutAsync);

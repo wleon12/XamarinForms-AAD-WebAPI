@@ -9,12 +9,12 @@ using XFConversion.ViewModels;
 
 namespace XFConversion
 {
-    public partial class MainPage : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        public MainPage()
+        public LoginPage()
         {
             InitializeComponent();
-            var vm = new MainViewModel();
+            var vm = new LoginPageModel();
             vm.Load();
             this.BindingContext =vm;
 
